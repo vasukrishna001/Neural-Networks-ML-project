@@ -1,6 +1,37 @@
+
 # Neural Network Performance for Handwritten Digit and CelebA Classification
 
 This project explores the implementation and optimization of neural networks for classification tasks using datasets such as **MNIST** (handwritten digits) and **CelebA** (celebrity face attributes). The focus of this work is to experiment with different hyper-parameters such as the number of hidden units and lambda values to optimize the performance of the model.
+
+
+## File Structure and Usage
+
+### 1. **mnist_all.mat**
+   - **Description**: Contains the MNIST dataset with training and test sets of handwritten digits.
+   - **Usage**: Used for digit classification, split into training and validation sets.
+
+### 2. **face_all.pickle**
+   - **Description**: A subset of the CelebA dataset for classifying faces based on glasses.
+   - **Usage**: Used for facial attribute classification (glasses vs no-glasses).
+
+### 3. **nnScript.py**
+   - **Description**: Implements the neural network including preprocessing, feedforward, error function, and backpropagation.
+   - **Functions**: 
+     - `preprocess()`: Prepares data.
+     - `sigmoid()`: Activation function.
+     - `nnObjFunction()`: Error function with regularization.
+     - `nnPredict()`: Makes predictions.
+     - `initializeWeights()`: Initializes weights.
+   - **Usage**: Central script for training and evaluating the neural network.
+
+### 4. **facennScript.py**
+   - **Description**: Runs the neural network on the CelebA dataset, calling functions from `nnScript.py`.
+   - **Usage**: Used specifically for face classification tasks.
+
+### 5. **params.pickle**
+   - **Description**: Stores the learned model parameters (weights, optimal hidden units, lambda).
+   - **Usage**: Used for making predictions with the trained model.
+
 
 ## Key Features:
 - **Hyper-parameter Optimization**: A heatmap analysis of the validation set accuracy was conducted to determine the optimal number of hidden units and lambda values.
