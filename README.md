@@ -4,7 +4,7 @@
 This project explores the implementation and optimization of neural networks for classification tasks using datasets such as **MNIST** (handwritten digits) and **CelebA** (celebrity face attributes). The focus of this work is to experiment with different hyper-parameters such as the number of hidden units and lambda values to optimize the performance of the model.
 
 
-## File Structure and Usage ( to get access to all these filesgo to this link and download basecode folder https://drive.google.com/drive/folders/14RcWRVbpa9bl3dY2xIPFoAu8kPhu8qB6?usp=drive_link)
+## File Structure and Usage ( to get access to all these files go to this link and download basecode folder https://drive.google.com/drive/folders/14RcWRVbpa9bl3dY2xIPFoAu8kPhu8qB6?usp=drive_link)
 
 ### 1. **mnist_all.mat**
    - **Description**: Contains the MNIST dataset with training and test sets of handwritten digits.
